@@ -91,7 +91,7 @@ if($query->have_posts()){
          $query->the_post();        
 ?>
                <div class="d-flex flex-column project-box">
-                    <h2 class="project-heading"><?php echo get_the_title(); ?></h2>
+               <h2 class="project-heading"><a href="<?php echo get_the_permalink(); ?>"><?php echo get_the_title(); ?></a></h2>
                     <p class="project-detail"><?php echo get_the_excerpt(); ?></p>
                     <img class="project-img align-self-center" src="<?php echo wp_get_attachment_url(get_post_thumbnail_id(get_the_ID())); ?>">
                 </div>

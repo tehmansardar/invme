@@ -22,7 +22,7 @@ $services = get_terms($taxonomy, array( 'parent' => 0, 'orderby' => 'term_id', '
             <div class="row">
                 <div class="col-12 banner-info-col">
                         <div class="d-flex flex-column">
-                                <h2 class="service-header-heading">What we do.</h2>
+                                <h2 class="service-header-heading"><?php the_title(); ?>.</h2>
                                 <p class="contactus-subtitle ourwork-subtitle">Services to put you in perspective with success.
                                     Find your right approach & partners here.</p>
                            </div>

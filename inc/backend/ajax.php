@@ -93,7 +93,7 @@ function invm_save_quote()
     //Set gmail username
         $mail->Username = $username;
     //Set gmail password
-        $mail->Password = "";
+        $mail->Password = "CRUSHERstudy1";
     //Email subject
         $mail->Subject = "Inventive Media: ".$name;
     //Set sender email

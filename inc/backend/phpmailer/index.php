@@ -21,13 +21,13 @@
 //Port to connect smtp
 	$mail->Port = "587";
 //Set gmail username
-	$mail->Username = "";
+	$mail->Username = "ahadtehman@gmail.com";
 //Set gmail password
-	$mail->Password = "";
+	$mail->Password = "09029221453";
 //Email subject
 	$mail->Subject = "Test email using PHPMailer";
 //Set sender email
-	$mail->setFrom('');
+	$mail->setFrom('ahadtehman@gmail.com');
 //Enable HTML
 	$mail->isHTML(true);
 //Attachment
@@ -35,7 +35,7 @@
 //Email body
 	$mail->Body = "<h1>This is HTML h1 Heading</h1></br><p>This is html paragraph</p>";
 //Add recipient
-	$mail->addAddress('');
+	$mail->addAddress('ahadtehman@gmail.com');
 //Finally send email
 	if ( $mail->send() ) {
 		echo "Email Sent..!";
