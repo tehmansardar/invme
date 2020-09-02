@@ -21,7 +21,7 @@ get_header();
                     <p class="section-heading">About you</p>
                     <div class="form-group contact-form-group">
 
-                            <input class="inputfield" id="name" type="text" name="name" required>
+                            <input class="inputfield" id="name" type="text" name="name" required data-parsley-pattern="^[a-zA-Z ]+$" data-parsley-trigger="keyup">
                             <span class="highlight"></span>
                             <span class="bar"></span>
                             <label class="inputlabel">Name</label>
@@ -31,7 +31,7 @@ get_header();
                         <div class="col-sm-6 col-12">
                                 <div class="form-group contact-form-group">
 
-                                        <input class="inputfield" id="email" type="text" name="email" required>
+                                        <input class="inputfield" id="email" type="text" name="email" required data-parsley-type="email" data-parsley-trigger="keyup">
                                         <span class="highlight"></span>
                                         <span class="bar"></span>
                                         <label class="inputlabel">Email Address</label>
@@ -41,7 +41,7 @@ get_header();
                         <div class="col-sm-6 col-126">
                                 <div class="form-group contact-form-group">
 
-                                        <input class="inputfield" id="phone" type="text" name="phone" required>
+                                        <input class="inputfield" id="phone" type="text" name="phone" required data-parsley-pattern="^[\d\+\-\.\(\)\/\s]*$"  data-parsley-trigger="keyup">
                                         <span class="highlight"></span>
                                         <span class="bar"></span>
                                         <label class="inputlabel">Phone Number</label>
@@ -51,7 +51,7 @@ get_header();
                     </div>
                     <div class="form-group contact-form-group">
 
-                            <input class="inputfield" id="about" type="text" name="about" required>
+                            <input class="inputfield" id="about" type="text" name="about" required data-parsley-trigger="keyup" data-parsley-minlength="20" data-parsley-maxlength="200" data-parsley-minlength-message="Come on! You need to enter at least a 20 character about you.." data-parsley-validation-threshold="10">
                             <span class="highlight"></span>
                             <span class="bar"></span>
                             <label class="inputlabel">Tell us about you</label>
@@ -60,7 +60,7 @@ get_header();
                     <p class="section-heading">About your project</p>
                     <div class="form-group contact-form-group">
 
-                            <input class="inputfield" id="project" type="text" name="project" required>
+                            <input class="inputfield" id="project" type="text" name="project" required data-parsley-trigger="keyup" data-parsley-minlength="20" data-parsley-maxlength="1000" data-parsley-minlength-message="Come on! You need to enter at least a 20 character about project.." data-parsley-validation-threshold="10">
                             <span class="highlight"></span>
                             <span class="bar"></span>
                             <label class="inputlabel">Tell us about your project.</label>
@@ -68,15 +68,15 @@ get_header();
                     </div>
                     <div class="form-group contact-form-group">
 
-                            <input class="inputfield" id="deadlines" type="text" name="deadlines" required>
+                            <input class="inputfield" id="deadlines" type="text" name="deadlines"  required data-parsley-trigger="keyup" data-parsley-minlength="20" data-parsley-maxlength="100" data-parsley-minlength-message="Come on! You need to enter at least a 20 character about dealines.." data-parsley-validation-threshold="10">
                             <span class="highlight"></span>
                             <span class="bar"></span>
                             <label class="inputlabel">What are your deadlines?</label>
 
                     </div>
-                    <p class="section-heading">What is your project type?</p>
+                    <!-- <p class="section-heading">What is your project type?</p> -->
 
-                    <div class="row project-type-row">
+                    <!-- <div class="row project-type-row">
                         <div class="col-lg-4 col-6">
                         <div class="form-check contactus-checkbox">
                                 <label class="checkbox-label">UI/UX Design
@@ -125,11 +125,11 @@ get_header();
                                                       </label>
                                             </div>
                                         </div>
-                    </div>
+                    </div> -->
                     <p class="section-heading">What is your budget?</p>
                     <div class="d-flex flex-row custom-select" >
 
-                            <select id="amount" name="amount" class="amount">
+                            <select id="amount" name="amount" class="amount" required>
                               <option value="0">Choose amount</option>
                               <option value="$5000-$4000">$5000-$4000</option>
                               <option value="$4000-$3000">$4000-$3000</option>
@@ -139,14 +139,14 @@ get_header();
                     </div>
 
                     <div class="d-flex flex-row attachment-section justify-content-center" onclick="document.getElementById('attachment').click()" style="cursor:pointer;">
-                                <input type="file" name="attachment" id="attachment" style="position:absolute; visibility:hidden;"/>
+                                <input type="file" name="attachment[]" id="attachment" multiple style="position:absolute; visibility:hidden;"/>
                             <img src="<?php echo get_template_directory_uri(); ?>/Images/attachment.png" class="align-self-center">
                             <p class="attachment-txt">Attach any files you feel would be useful</p>
 
                     </div>
                     <div class="form-check contactus-checkbox term-checkbox">
                             <label class="checkbox-label term-label">I understand the information above will be stored only for business purposes. Check our <span><a href="#" class="orange-txt">Privacy Policy</a></span> for more info.
-                                    <input type="checkbox" >
+                                    <input type="checkbox" name="checkbox" id="checkbox" required >
                                     <span class="checkmark"></span>
                                   </label>
                         </div>
@@ -154,6 +154,10 @@ get_header();
                             <button type="submit" name="submit" id="submit" class="get-quote ml-0">Get a quote</button>
 
                   </form>
+                <br />
+                <div class="notify hide">
+                 <p id="notify-message" ></p>
+                 </div>
                </div>
                <div class="col-lg-6 col-12 map-col">
                     <div class="map-section d-flex flex-column align-items-center">

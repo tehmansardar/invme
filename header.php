@@ -41,13 +41,15 @@ wp_title();?></title>
                                   
                                 <?php
                                     wp_nav_menu( [
-                                        'theme_location' => 'header',
-                                        'container' => false,
-                                        'menu_class' => 'subfooter-list align-self-center',
-                                        'list_item_class'  => 'nav-item',
+                                        'theme_location'      => 'header',
+                                        'container'           => false,
+                                        'menu_class'          => 'navbar-nav mr-auto',
+                                        'list_item_class'     => 'nav-item',
+                                        'link_after'          =>  '<span class="bordergradiant "></span>',
+                                        // 'depth'           => 2,
                                         // 'link_class'   => 'nav-link',
-                                        'link_after'           => '<span class="bordergradiant "></span>',
-                                        // 'walker' => new Sunset_Walker_Nav_Primary
+                                        // 'link_after'           => '<span class="bordergradiant "></span>',
+                                        // 'walker'                =>  new JU_Custom_Nav_Walker()
                                     ] );
                                 ?>
 

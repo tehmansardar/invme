@@ -85,6 +85,7 @@
 .navbar-light .navbar-nav .nav-item:hover .nav-link .bordergradiant {
 	margin-bottom: -10px;
 }
+
 .get-a-quote-section {
 	padding-top: 22px;
 	padding-bottom: 30px;
@@ -98,6 +99,33 @@
 	color: #555555;
 	margin-bottom: 0;
 }
+
+/* ======================== */
+
+.navbar-nav li {
+	align-items: center;
+	display: flex;
+}
+.navbar-nav li a:focus,
+.navbar-nav li a {
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 1.43;
+	letter-spacing: normal;
+	color: #555555;
+	margin-bottom: 0;
+	text-decoration: none;
+}
+.navbar-nav .nav-item:hover a,
+.navbar-nav .nav-item:hover a .bordergradiant {
+	color: #f27622;
+	display: block;
+}
+.navbar-nav .nav-item:hover a .bordergradiant {
+	margin-bottom: -10px;
+}
+/* ======================== */
+
 .header-container {
 	height: 600px;
 	background: url('../Images/hero-banner.png') top center no-repeat;
@@ -635,6 +663,33 @@
 	-moz-animation: inputHighlighter 0.3s ease;
 	animation: inputHighlighter 0.3s ease;
 }
+
+/* ===================================
+	Form Validations
+   ===================================
+*/
+#submit {
+	border: none;
+	outline: none;
+}
+#invmContactForm ul li {
+	list-style-type: none;
+	color: #f27622;
+}
+.notify {
+	padding-left: 5px;
+	color: #fff;
+}
+.hide {
+	display: none;
+}
+.notify-success {
+	background: #42cc42;
+}
+.notify-error {
+	background: #f54a4a;
+}
+/* =================================== */
 
 /* ANIMATIONS ================ */
 @-webkit-keyframes inputHighlighter {

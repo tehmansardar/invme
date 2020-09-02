@@ -75,7 +75,18 @@ function invm_enqueue()
     wp_register_script('invm_bxslider_js', $uri . '/dist/bxslider/jquery.bxslider.min.js', [], $ver, true);
     wp_register_script('invm_script_js', $uri . '/js/scripts.js', [], $ver, true);
     wp_register_script('invm_selectInput_js', $uri . '/js/selectinput.js', [], $ver, true);
+    
+    
+    wp_register_script(
+        'invm_parsley',
+        'http://parsleyjs.org/dist/parsley.js',
+        [],
+        $ver,
+        true
+    );    
+    
     wp_register_script('invm_dynamic_js', $uri . '/js/dynamic.js', [], $ver, true);
+
 
     // Register Scripts
     wp_enqueue_script('invm_jQuery');
@@ -84,6 +95,7 @@ function invm_enqueue()
     wp_enqueue_script('invm_bxslider_js');
     wp_enqueue_script('invm_script_js');
     wp_enqueue_script('invm_selectInput_js');
+    wp_enqueue_script('invm_parsley');
     wp_enqueue_script('invm_dynamic_js');
 
 }

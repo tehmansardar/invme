@@ -9,6 +9,7 @@ define('INVM_DEV', true);
 
 // Includes
 include get_theme_file_path('/inc/frontend/enqueue.php');
+include get_theme_file_path('/inc/walkerNav.php');
 include get_theme_file_path('/inc/backend/menus.php');
 include( get_theme_file_path( '/inc/theme-customizer.php' ) );
 include( get_theme_file_path( '/inc/customizer/info.php' ) );
