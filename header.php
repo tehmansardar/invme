@@ -46,10 +46,10 @@ wp_title();?></title>
                                         'menu_class'          => 'navbar-nav mr-auto',
                                         'list_item_class'     => 'nav-item',
                                         'link_after'          =>  '<span class="bordergradiant "></span>',
-                                        // 'depth'           => 2,
-                                        // 'link_class'   => 'nav-link',
-                                        // 'link_after'           => '<span class="bordergradiant "></span>',
-                                        // 'walker'                =>  new JU_Custom_Nav_Walker()
+                                        // 'depth'            => 2,
+                                        // 'link_class'       => 'nav-link',
+                                        // 'link_after'       => '<span class="bordergradiant "></span>',
+                                        'walker'              =>  new Walker_Nav_Primary()
                                     ] );
                                 ?>
 

@@ -383,7 +383,7 @@
 }
 .megamenu-heading {
 	font-size: 16px;
-	margin-bottom: 11px;
+	margin-bottom: 11px; 
 }
 
 .footer-content {
@@ -663,33 +663,6 @@
 	-moz-animation: inputHighlighter 0.3s ease;
 	animation: inputHighlighter 0.3s ease;
 }
-
-/* ===================================
-	Form Validations
-   ===================================
-*/
-#submit {
-	border: none;
-	outline: none;
-}
-#invmContactForm ul li {
-	list-style-type: none;
-	color: #f27622;
-}
-.notify {
-	padding-left: 5px;
-	color: #fff;
-}
-.hide {
-	display: none;
-}
-.notify-success {
-	background: #42cc42;
-}
-.notify-error {
-	background: #f54a4a;
-}
-/* =================================== */
 
 /* ANIMATIONS ================ */
 @-webkit-keyframes inputHighlighter {
@@ -1240,4 +1213,38 @@
 	.get-quote {
 		font-size: 11px;
 	}
+}
+
+
+.megamenu-container .footer-heading {
+	font-size: 14px;
+	font-weight: bold;
+	color: #262626;
+	font-family: 'Red Hat Display';
+}
+.megamenu-container .megamenu-heading {
+	font-size: 16px;
+	margin-bottom: 11px; 
+}
+
+.megamenu-container .footer-list {
+	list-style: none;
+	padding-left: 0px;
+}
+.megamenu-container .footer-list li {
+	margin-bottom: 5px;
+}
+
+.megamenu-container .footer-content {
+	font-family: 'Red Hat Display';
+	text-decoration: none;
+	color: #7b7b7b !important;
+	font-size: 14px;
+}
+.megamenu-container .megamenu-content {
+	color: #262626;
+}
+.megamenu-container .footer-content:hover {
+	text-decoration: none;
+	color: #f38121;
 }
