@@ -1248,3 +1248,10 @@
 	text-decoration: none;
 	color: #f38121;
 }
+
+/* Conact form skontech */
+.parsley-errors-list li.parsley-required {
+    list-style: none;
+    margin-left: -43px;
+	color: red;
+}

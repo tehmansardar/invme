@@ -50,7 +50,7 @@ get_header();
 							organization in improving business processes with minimum hassles
 							and capital outlays.
 						</p>
-						<a href="#" class="readmore"
+						<a href="<?php echo home_url( '/services/' ); ?> " class="readmore"
 							><p class="text-center">READ MORE</p></a
 						>
 					</div>

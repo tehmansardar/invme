@@ -20,7 +20,7 @@ $services = get_terms($taxonomy, array( 'parent' => 0, 'orderby' => 'term_id', '
                             brilliance together!</h2>
                 </div>
                 <div class="col-lg-5 col-12 d-flex  flex-row justify-content-lg-end justify-content-center align-self-center">
-                        <a class="get-quote" href="contactUs.html">Contact us</a>
+                        <a class="get-quote" href="<?php echo home_url( '/contact/' ); ?> ">Contact us</a>
                 </div>
 
             </div>
